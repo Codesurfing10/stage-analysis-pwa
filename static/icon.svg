@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">
+  <rect width="512" height="512" rx="96" fill="#0b0f14"/>
+  <path d="M96 360 L200 240 L280 300 L416 140" fill="none" stroke="#3dd68c" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="416" cy="140" r="28" fill="#5b8cff"/>
+  <text x="96" y="430" font-family="system-ui,sans-serif" font-size="72" font-weight="700" fill="#e8eef7">SA</text>
+</svg>

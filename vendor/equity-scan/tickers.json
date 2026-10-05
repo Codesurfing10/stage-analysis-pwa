@@ -1,0 +1,930 @@
+{
+  "asof": "2026-10-01",
+  "generated": "2026-10-02 13:16 PT",
+  "count": 63,
+  "dip_alert_ticker": "MU",
+  "dip_alert": {
+    "ticker": "MU",
+    "reference_price": 1097.39,
+    "alert_minus_3pct": 1064.47,
+    "alert_minus_5pct": 1042.52,
+    "sma150": 783.8235,
+    "invalidation": "Close below SMA150 (783.82) or Stage 4"
+  },
+  "watchlist": [
+    {
+      "ticker": "GLBS",
+      "name": "GLOBUS MARITIME LIMITED",
+      "guides": [
+        "Shipping"
+      ],
+      "mic_symbol": "XNAS:GLBS",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 107.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "MU",
+      "name": "MICRON TECHNOLOGY, INC.",
+      "guides": [
+        "Technology"
+      ],
+      "mic_symbol": "XNAS:MU",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 103.0,
+      "dip_alert": true
+    },
+    {
+      "ticker": "BHP.AX",
+      "name": "BHP GROUP LIMITED",
+      "guides": [
+        "Shipping"
+      ],
+      "mic_symbol": "XASX:BHP",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 102.31,
+      "dip_alert": false
+    },
+    {
+      "ticker": "LSCC",
+      "name": "LATTICE SEMICONDUCTOR CORPORATION",
+      "guides": [
+        "Space"
+      ],
+      "mic_symbol": "XNAS:LSCC",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 91.6,
+      "dip_alert": false
+    },
+    {
+      "ticker": "SHIP",
+      "name": "SEANERGY MARITIME HOLDINGS CORP.",
+      "guides": [
+        "Industrial"
+      ],
+      "mic_symbol": "XNAS:SHIP",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 90.74,
+      "dip_alert": false
+    },
+    {
+      "ticker": "MATX",
+      "name": "MATSON, INC.",
+      "guides": [
+        "Shipping"
+      ],
+      "mic_symbol": "XNYS:MATX",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 90.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "ZIM",
+      "name": "ZIM INTEGRATED SHIPPING SERVICES LTD",
+      "guides": [
+        "Shipping"
+      ],
+      "mic_symbol": "XNYS:ZIM",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 85.34,
+      "dip_alert": false
+    },
+    {
+      "ticker": "YPF",
+      "name": "YPF SA",
+      "guides": [
+        "Industrial"
+      ],
+      "mic_symbol": "XNYS:YPF",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 84.79,
+      "dip_alert": false
+    },
+    {
+      "ticker": "SBLK",
+      "name": "STAR BULK CARRIERS CORP.",
+      "guides": [
+        "Shipping"
+      ],
+      "mic_symbol": "XNAS:SBLK",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 83.59,
+      "dip_alert": false
+    },
+    {
+      "ticker": "GNK",
+      "name": "GENCO SHIPPING & TRADING LIMITED",
+      "guides": [
+        "Shipping"
+      ],
+      "mic_symbol": "XNYS:GNK",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 83.25,
+      "dip_alert": false
+    },
+    {
+      "ticker": "SNDK",
+      "name": "SANDISK CORPORATION",
+      "guides": [
+        "Technology"
+      ],
+      "mic_symbol": "XNAS:SNDK",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 83.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "AMD",
+      "name": "ADVANCED MICRO DEVICES, INC.",
+      "guides": [
+        "Technology"
+      ],
+      "mic_symbol": "XFRA:AMD",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 83.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "INTC",
+      "name": "INTEL CORPORATION",
+      "guides": [
+        "Technology"
+      ],
+      "mic_symbol": "XNAS:INTC",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 83.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "DSX",
+      "name": "DIANA SHIPPING INC.",
+      "guides": [
+        "Shipping"
+      ],
+      "mic_symbol": "XNYS:DSX",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 80.68,
+      "dip_alert": false
+    },
+    {
+      "ticker": "ADM",
+      "name": "ARCHER-DANIELS-MIDLAND COMPANY.",
+      "guides": [
+        "Shipping"
+      ],
+      "mic_symbol": "XNYS:ADM",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 80.07,
+      "dip_alert": false
+    },
+    {
+      "ticker": "PANW",
+      "name": "PALO ALTO NETWORKS, INC.",
+      "guides": [
+        "Technology"
+      ],
+      "mic_symbol": "XNAS:PANW",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 79.92,
+      "dip_alert": false
+    },
+    {
+      "ticker": "DE",
+      "name": "DEERE & COMPANY",
+      "guides": [
+        "Industrial"
+      ],
+      "mic_symbol": "XNYS:DE",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 79.66,
+      "dip_alert": false
+    },
+    {
+      "ticker": "COP",
+      "name": "CONOCOPHILLIPS",
+      "guides": [
+        "Industrial"
+      ],
+      "mic_symbol": "XNYS:COP",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 79.29,
+      "dip_alert": false
+    },
+    {
+      "ticker": "PANL",
+      "name": "PANGAEA LOGISTICS SOLUTIONS LTD.",
+      "guides": [
+        "Shipping"
+      ],
+      "mic_symbol": "XNAS:PANL",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 77.19,
+      "dip_alert": false
+    },
+    {
+      "ticker": "DDOG",
+      "name": "DATADOG, INC.",
+      "guides": [
+        "Technology"
+      ],
+      "mic_symbol": "XNAS:DDOG",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 76.67,
+      "dip_alert": false
+    },
+    {
+      "ticker": "XMTR",
+      "name": "XOMETRY, INC.",
+      "guides": [
+        "Technology",
+        "Industrial"
+      ],
+      "mic_symbol": "XNAS:XMTR",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 76.08,
+      "dip_alert": false
+    },
+    {
+      "ticker": "MERK.JK",
+      "name": "PT Merck Tbk",
+      "guides": [
+        "Industrial"
+      ],
+      "mic_symbol": "XIDX:MERK",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 75.65,
+      "dip_alert": false
+    },
+    {
+      "ticker": "WEAT",
+      "name": "Teucrium:Wheat",
+      "guides": [
+        "Shipping"
+      ],
+      "mic_symbol": "ARCX:WEAT",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 74.16,
+      "dip_alert": false
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA CORPORATION",
+      "guides": [
+        "Technology"
+      ],
+      "mic_symbol": "XNAS:NVDA",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 73.26,
+      "dip_alert": false
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM INCORPORATED",
+      "guides": [
+        "Technology",
+        "Space"
+      ],
+      "mic_symbol": "XNAS:QCOM",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 72.34,
+      "dip_alert": false
+    },
+    {
+      "ticker": "SIEGY",
+      "name": "Siemens AG",
+      "guides": [
+        "Space"
+      ],
+      "mic_symbol": "OTCM:SIEGY",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 72.18,
+      "dip_alert": false
+    },
+    {
+      "ticker": "ZM",
+      "name": "ZOOM COMMUNICATIONS, INC.",
+      "guides": [
+        "Industrial"
+      ],
+      "mic_symbol": "XNAS:ZM",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 69.27,
+      "dip_alert": false
+    },
+    {
+      "ticker": "NET",
+      "name": "CLOUDFLARE, INC.",
+      "guides": [
+        "Technology"
+      ],
+      "mic_symbol": "XNYS:NET",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 67.2,
+      "dip_alert": false
+    },
+    {
+      "ticker": "AMZN",
+      "name": "AMAZON.COM, INC.",
+      "guides": [
+        "Space"
+      ],
+      "mic_symbol": "XNAS:AMZN",
+      "stage": "Stage 2 (Advancing)",
+      "action": "BUY / HOLD",
+      "score": 66.85,
+      "dip_alert": false
+    },
+    {
+      "ticker": "GOOG",
+      "name": "ALPHABET INC.",
+      "guides": [
+        "Technology"
+      ],
+      "mic_symbol": "XNAS:GOOG",
+      "stage": "Stage 1 (Basing)",
+      "action": "HOLD / WATCH",
+      "score": 5.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "AVGO",
+      "name": "BROADCOM INC.",
+      "guides": [
+        "Technology"
+      ],
+      "mic_symbol": "XNAS:AVGO",
+      "stage": "Stage 1 (Basing)",
+      "action": "HOLD / WATCH",
+      "score": 5.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "RIO",
+      "name": "RIO TINTO PLC",
+      "guides": [
+        "Shipping"
+      ],
+      "mic_symbol": "XNYS:RIO",
+      "stage": "Stage 1 (Basing)",
+      "action": "HOLD / WATCH",
+      "score": 5.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "HON",
+      "name": "HONEYWELL INTERNATIONAL INCORPORATION",
+      "guides": [
+        "Space"
+      ],
+      "mic_symbol": "XFRA:ALD",
+      "stage": "Stage 1 (Basing)",
+      "action": "HOLD / WATCH",
+      "score": 5.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "GLD",
+      "name": "SPDR Gold",
+      "guides": [
+        "Shipping"
+      ],
+      "mic_symbol": "ARCX:GLD",
+      "stage": "Stage 1 (Basing)",
+      "action": "HOLD / WATCH",
+      "score": 5.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "AA",
+      "name": "ALCOA CORPORATION",
+      "guides": [
+        "Shipping"
+      ],
+      "mic_symbol": "XNYS:AA",
+      "stage": "Stage 1 (Basing)",
+      "action": "HOLD / WATCH",
+      "score": 5.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "LUNR",
+      "name": "INTUITIVE MACHINES, INC.",
+      "guides": [
+        "Industrial",
+        "Space"
+      ],
+      "mic_symbol": "XNAS:LUNR",
+      "stage": "Stage 1 (Basing)",
+      "action": "HOLD / WATCH",
+      "score": 5.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "WMT",
+      "name": "WALMART INC.",
+      "guides": [
+        "Industrial"
+      ],
+      "mic_symbol": "XNAS:WMT",
+      "stage": "Stage 1 (Basing)",
+      "action": "HOLD / WATCH",
+      "score": 5.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "GSK",
+      "name": "GSK PLC",
+      "guides": [
+        "Industrial"
+      ],
+      "mic_symbol": "XNYS:GSK",
+      "stage": "Stage 1 (Basing)",
+      "action": "HOLD / WATCH",
+      "score": 5.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "ESOA",
+      "name": "ENERGY SERVICES OF AMERICA CORPORATION",
+      "guides": [
+        "Shipping"
+      ],
+      "mic_symbol": "XNAS:ESOA",
+      "stage": "Stage 1 (Basing)",
+      "action": "HOLD / WATCH",
+      "score": 5.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "ASTS",
+      "name": "AST SPACEMOBILE, INC.",
+      "guides": [
+        "Industrial",
+        "Space"
+      ],
+      "mic_symbol": "XNAS:ASTS",
+      "stage": "Stage 1 (Basing)",
+      "action": "HOLD / WATCH",
+      "score": 5.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "RDW",
+      "name": "REDWIRE CORPORATION",
+      "guides": [
+        "Space"
+      ],
+      "mic_symbol": "XNYS:RDW",
+      "stage": "Stage 1 (Basing)",
+      "action": "HOLD / WATCH",
+      "score": 5.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "FLY",
+      "name": "FIREFLY AEROSPACE INC.",
+      "guides": [
+        "Industrial",
+        "Space"
+      ],
+      "mic_symbol": "XNAS:FLY",
+      "stage": "Stage 1 (Basing)",
+      "action": "HOLD / WATCH",
+      "score": 5.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "ONDS",
+      "name": "ONDAS INC.",
+      "guides": [
+        "Industrial",
+        "Space"
+      ],
+      "mic_symbol": "XNAS:ONDS",
+      "stage": "Stage 1 (Basing)",
+      "action": "HOLD / WATCH",
+      "score": 5.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "RIVN",
+      "name": "RIVIAN AUTOMOTIVE, INC.",
+      "guides": [
+        "Space"
+      ],
+      "mic_symbol": "XNAS:RIVN",
+      "stage": "Stage 1 (Basing)",
+      "action": "HOLD / WATCH",
+      "score": 5.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "IONQ",
+      "name": "IONQ, INC.",
+      "guides": [
+        "Space"
+      ],
+      "mic_symbol": "XNYS:IONQ",
+      "stage": "Stage 3 (Topping)",
+      "action": "HOLD / WATCH",
+      "score": 0.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "U",
+      "name": "UNITY SOFTWARE INC.",
+      "guides": [
+        "Industrial",
+        "Space"
+      ],
+      "mic_symbol": "XNYS:U",
+      "stage": "Stage 3 (Topping)",
+      "action": "HOLD / WATCH",
+      "score": 0.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "BITU",
+      "name": "ProShares:Ultra Bitcoin",
+      "guides": [
+        "Space"
+      ],
+      "mic_symbol": "ARCX:BITU",
+      "stage": "Stage 3 (Topping)",
+      "action": "HOLD / WATCH",
+      "score": 0.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "NOW",
+      "name": "SERVICENOW, INC.",
+      "guides": [
+        "Technology"
+      ],
+      "mic_symbol": "XNYS:NOW",
+      "stage": "Stage 3 (Topping)",
+      "action": "HOLD / WATCH",
+      "score": 0.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "CRM",
+      "name": "SALESFORCE, INC.",
+      "guides": [
+        "Technology"
+      ],
+      "mic_symbol": "XNYS:CRM",
+      "stage": "Stage 3 (Topping)",
+      "action": "HOLD / WATCH",
+      "score": 0.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "MSFT",
+      "name": "MICROSOFT CORPORATION",
+      "guides": [
+        "Technology",
+        "Space"
+      ],
+      "mic_symbol": "XNAS:MSFT",
+      "stage": "Stage 3 (Topping)",
+      "action": "HOLD / WATCH",
+      "score": 0.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "ZS",
+      "name": "ZSCALER, INC.",
+      "guides": [
+        "Technology"
+      ],
+      "mic_symbol": "XNAS:ZS",
+      "stage": "Stage 3 (Topping)",
+      "action": "HOLD / WATCH",
+      "score": 0.0,
+      "dip_alert": false
+    },
+    {
+      "ticker": "TSLA",
+      "name": "TESLA, INC.",
+      "guides": [
+        "Shipping",
+        "Industrial"
+      ],
+      "mic_symbol": "XNAS:TSLA",
+      "stage": "Stage 4 (Declining)",
+      "action": "SELL / AVOID",
+      "score": -50.09,
+      "dip_alert": false
+    },
+    {
+      "ticker": "BASF.NS",
+      "name": "BASF INDIA LIMITED",
+      "guides": [
+        "Industrial"
+      ],
+      "mic_symbol": "XNSE:BASF",
+      "stage": "Stage 4 (Declining)",
+      "action": "SELL / AVOID",
+      "score": -50.1,
+      "dip_alert": false
+    },
+    {
+      "ticker": "PSHG",
+      "name": "Performance Shipping Inc.",
+      "guides": [
+        "Shipping"
+      ],
+      "mic_symbol": "XNAS:PSHG",
+      "stage": "Stage 4 (Declining)",
+      "action": "SELL / AVOID",
+      "score": -50.12,
+      "dip_alert": false
+    },
+    {
+      "ticker": "CRCL",
+      "name": "CIRCLE INTERNET GROUP, INC.",
+      "guides": [
+        "Technology",
+        "Space"
+      ],
+      "mic_symbol": "XNYS:CRCL",
+      "stage": "Stage 4 (Declining)",
+      "action": "SELL / AVOID",
+      "score": -50.12,
+      "dip_alert": false
+    },
+    {
+      "ticker": "HIVE",
+      "name": "HIVE DIGITAL TECHNOLOGIES LTD.",
+      "guides": [
+        "Space"
+      ],
+      "mic_symbol": "XNAS:HIVE",
+      "stage": "Stage 4 (Declining)",
+      "action": "SELL / AVOID",
+      "score": -50.14,
+      "dip_alert": false
+    },
+    {
+      "ticker": "SLV.CN",
+      "name": "Silver Dollar Resources Inc",
+      "guides": [
+        "Shipping",
+        "Industrial"
+      ],
+      "mic_symbol": "XCNQ:SLV",
+      "stage": "Stage 4 (Declining)",
+      "action": "SELL / AVOID",
+      "score": -50.24,
+      "dip_alert": false
+    },
+    {
+      "ticker": "PCT",
+      "name": "PURECYCLE TECHNOLOGIES, INC.",
+      "guides": [
+        "Industrial"
+      ],
+      "mic_symbol": "XNAS:PCT",
+      "stage": "Stage 4 (Declining)",
+      "action": "SELL / AVOID",
+      "score": -50.26,
+      "dip_alert": false
+    },
+    {
+      "ticker": "QUBT",
+      "name": "QUANTUM COMPUTING INC.",
+      "guides": [
+        "Space"
+      ],
+      "mic_symbol": "XNAS:QUBT",
+      "stage": "Stage 4 (Declining)",
+      "action": "SELL / AVOID",
+      "score": -50.37,
+      "dip_alert": false
+    },
+    {
+      "ticker": "ACHR",
+      "name": "ARCHER AVIATION INC.",
+      "guides": [
+        "Industrial"
+      ],
+      "mic_symbol": "XNYS:ACHR",
+      "stage": "Stage 4 (Declining)",
+      "action": "SELL / AVOID",
+      "score": -50.41,
+      "dip_alert": false
+    },
+    {
+      "ticker": "CAT.CN",
+      "name": "CAT STRATEGIC METALS CORPORATION",
+      "guides": [
+        "Industrial"
+      ],
+      "mic_symbol": "XCNQ:CAT",
+      "stage": "Stage 4 (Declining)",
+      "action": "SELL / AVOID",
+      "score": -50.64,
+      "dip_alert": false
+    },
+    {
+      "ticker": "BKKT",
+      "name": "BAKKT, INC.",
+      "guides": [
+        "Space"
+      ],
+      "mic_symbol": "XNYS:BKKT",
+      "stage": "Stage 4 (Declining)",
+      "action": "SELL / AVOID",
+      "score": -50.83,
+      "dip_alert": false
+    },
+    {
+      "ticker": "TTD",
+      "name": "THE TRADE DESK, INC.",
+      "guides": [
+        "Technology"
+      ],
+      "mic_symbol": "XNAS:TTD",
+      "stage": "Stage 4 (Declining)",
+      "action": "SELL / AVOID",
+      "score": -50.83,
+      "dip_alert": false
+    }
+  ],
+  "failed": [
+    {
+      "mic": "XNYS",
+      "raw_sym": "INFQ",
+      "name": "INFLEQTION, INC.",
+      "candidates": [
+        "INFQ"
+      ]
+    }
+  ],
+  "market_asof": "2026-10-01",
+  "market_universe_size": 1536,
+  "market_universe_attempted": 1553,
+  "market_scored_raw": 1541,
+  "market_stage2_count": 487,
+  "market_top10": [
+    {
+      "ticker": "ACMR",
+      "name": "ACMR",
+      "price": 83.58,
+      "sma150": 71.4755,
+      "slope": 0.261746,
+      "vol_ratio": 1.3644,
+      "volume_confirmed": true,
+      "extended_pct": 0.0905,
+      "score": 112.0,
+      "stage": "Stage 2 (Advancing)",
+      "why": "Stage 2; vol confirmed (1.36x); ext 9.0% vs SMA50; slope/SMA 0.366%/day; 16.9% above SMA150"
+    },
+    {
+      "ticker": "SNX",
+      "name": "SNX",
+      "price": 271.76,
+      "sma150": 234.0914,
+      "slope": 0.635955,
+      "vol_ratio": 1.4317,
+      "volume_confirmed": true,
+      "extended_pct": 0.053,
+      "score": 108.73,
+      "stage": "Stage 2 (Advancing)",
+      "why": "Stage 2; vol confirmed (1.43x); ext 5.3% vs SMA50; slope/SMA 0.272%/day; 16.1% above SMA150"
+    },
+    {
+      "ticker": "LITE",
+      "name": "LITE",
+      "price": 1045.78,
+      "sma150": 841.8034,
+      "slope": 3.935649,
+      "vol_ratio": 1.5517,
+      "volume_confirmed": true,
+      "extended_pct": 0.1966,
+      "score": 108.0,
+      "stage": "Stage 2 (Advancing)",
+      "why": "Stage 2; vol confirmed (1.55x); ext 19.7% vs SMA50; slope/SMA 0.468%/day; 24.2% above SMA150"
+    },
+    {
+      "ticker": "VIAV",
+      "name": "VIAV",
+      "price": 44.78,
+      "sma150": 41.6045,
+      "slope": 0.186019,
+      "vol_ratio": 1.4193,
+      "volume_confirmed": true,
+      "extended_pct": 0.1725,
+      "score": 108.0,
+      "stage": "Stage 2 (Advancing)",
+      "why": "Stage 2; vol confirmed (1.42x); ext 17.2% vs SMA50; slope/SMA 0.447%/day; 7.6% above SMA150"
+    },
+    {
+      "ticker": "PBI",
+      "name": "PBI",
+      "price": 16.61,
+      "sma150": 15.3187,
+      "slope": 0.03993,
+      "vol_ratio": 1.9493,
+      "volume_confirmed": true,
+      "extended_pct": -0.025,
+      "score": 107.85,
+      "stage": "Stage 2 (Advancing)",
+      "why": "Stage 2; vol confirmed (1.95x); ext -2.5% vs SMA50; slope/SMA 0.261%/day; 8.4% above SMA150"
+    },
+    {
+      "ticker": "MSGS",
+      "name": "MSGS",
+      "price": 399.19,
+      "sma150": 366.518,
+      "slope": 0.938361,
+      "vol_ratio": 2.243,
+      "volume_confirmed": true,
+      "extended_pct": 0.0041,
+      "score": 107.48,
+      "stage": "Stage 2 (Advancing)",
+      "why": "Stage 2; vol confirmed (2.24x); ext 0.4% vs SMA50; slope/SMA 0.256%/day; 8.9% above SMA150"
+    },
+    {
+      "ticker": "COHR",
+      "name": "COHR",
+      "price": 319.19,
+      "sma150": 315.606,
+      "slope": 1.217416,
+      "vol_ratio": 1.6525,
+      "volume_confirmed": true,
+      "extended_pct": 0.0763,
+      "score": 107.0,
+      "stage": "Stage 2 (Advancing)",
+      "why": "Stage 2; vol confirmed (1.65x); ext 7.6% vs SMA50; slope/SMA 0.386%/day; 1.1% above SMA150"
+    },
+    {
+      "ticker": "GLBS",
+      "name": "GLOBUS MARITIME LIMITED",
+      "price": 3.4,
+      "sma150": 2.6646,
+      "slope": 0.008974,
+      "vol_ratio": 2.2642,
+      "volume_confirmed": true,
+      "extended_pct": -0.0262,
+      "score": 107.0,
+      "stage": "Stage 2 (Advancing)",
+      "why": "Stage 2; vol confirmed (2.26x); ext -2.6% vs SMA50; slope/SMA 0.337%/day; 27.6% above SMA150"
+    },
+    {
+      "ticker": "BFH",
+      "name": "BFH",
+      "price": 96.94,
+      "sma150": 93.6445,
+      "slope": 0.205998,
+      "vol_ratio": 1.433,
+      "volume_confirmed": true,
+      "extended_pct": -0.0913,
+      "score": 104.6,
+      "stage": "Stage 2 (Advancing)",
+      "why": "Stage 2; vol confirmed (1.43x); ext -9.1% vs SMA50; slope/SMA 0.220%/day; 3.5% above SMA150"
+    },
+    {
+      "ticker": "ROG",
+      "name": "ROG",
+      "price": 155.8,
+      "sma150": 130.6739,
+      "slope": 0.329891,
+      "vol_ratio": 1.308,
+      "volume_confirmed": true,
+      "extended_pct": 0.1835,
+      "score": 103.2,
+      "stage": "Stage 2 (Advancing)",
+      "why": "Stage 2; vol confirmed (1.31x); ext 18.4% vs SMA50; slope/SMA 0.252%/day; 19.2% above SMA150"
+    }
+  ]
+}

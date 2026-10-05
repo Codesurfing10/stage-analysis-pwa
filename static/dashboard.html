@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/static/dashboard.css" />
+  <title>Stage Analysis — Dashboard</title>
+</head>
+<body>
+  <div id="unlock" class="unlock-overlay">
+    <div class="unlock-box">
+      <div class="unlock-brand">Stage Analysis</div>
+      <h2>Unlock dashboard</h2>
+      <p>Enter PIN (default 101010 from .app_pin). Stored in sessionStorage for this tab; re-prompted on 401.</p>
+      <input id="pin-input" type="password" inputmode="numeric" pattern="[0-9]*" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="PIN" maxlength="12" />
+      <div class="err" id="pin-err"></div>
+      <button class="btn btn-primary" id="pin-go" type="button">Unlock</button>
+      <a class="mobile-link" href="/">Mobile PWA →</a>
+    </div>
+  </div>
+
+  <div id="app" class="app hidden">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Stage Analysis</h1>
+          <div class="meta" id="asof-line">as-of —</div>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <span class="badge dry" id="dry-badge">dry_run</span>
+        <span class="badge muted" id="ticket-badge">0 tickets</span>
+        <button class="btn btn-ghost" id="btn-refresh" type="button">Refresh</button>
+        <a class="btn btn-ghost" href="/">Mobile</a>
+      </div>
+    </header>
+
+    <div class="layout">
+      <section class="panel" id="sec-top10">
+        <div class="panel-head">
+          <h2>Market Top 10 · Stage 2</h2>
+          <span class="panel-sub" id="top10-sub">—</span>
+        </div>
+        <div class="table-scroll">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Ticker</th>
+                <th>Name</th>
+                <th>Score</th>
+                <th></th>
+                <th>Price</th>
+                <th>Vol</th>
+                <th>Conf</th>
+                <th>Ext%</th>
+              </tr>
+            </thead>
+            <tbody id="top10-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel" id="sec-tickets">
+        <div class="panel-head">
+          <h2>Proposed tickets</h2>
+          <span class="panel-sub" id="tickets-sub">Approve writes to disk only</span>
+        </div>
+        <div class="table-scroll">
+          <table class="data-table tickets-table">
+            <thead>
+              <tr>
+                <th>Symbol</th>
+                <th>Side</th>
+                <th>Limit</th>
+                <th>Size</th>
+                <th>Score</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="tickets-body"></tbody>
+          </table>
+        </div>
+        <div id="tickets-empty" class="empty hidden">No proposed tickets.</div>
+      </section>
+
+      <section class="panel" id="sec-positions">
+        <div class="panel-head">
+          <h2>Positions · Stage</h2>
+          <span class="panel-sub" id="pos-sub">—</span>
+        </div>
+        <div class="table-scroll">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Symbol</th>
+                <th>Stage</th>
+                <th>Price</th>
+                <th>SMA50</th>
+                <th>SMA150</th>
+                <th>Slope</th>
+                <th>Vol</th>
+                <th>Ext%</th>
+              </tr>
+            </thead>
+            <tbody id="pos-body"></tbody>
+          </table>
+        </div>
+        <div id="pos-empty" class="empty hidden">No positions_stage JSON found.</div>
+      </section>
+
+      <section class="panel" id="sec-beta">
+        <div class="panel-head">
+          <h2>Beta vs SPY</h2>
+          <span class="panel-sub" id="beta-sub">—</span>
+        </div>
+        <div class="beta-summary" id="beta-summary"></div>
+        <div class="beta-bars" id="beta-bars"></div>
+        <div id="beta-empty" class="empty hidden">No positions_beta JSON found.</div>
+      </section>
+
+      <section class="panel half" id="sec-qcom">
+        <div class="panel-head">
+          <h2>QCOM</h2>
+          <span class="panel-sub">From market scan</span>
+        </div>
+        <div id="qcom-body" class="kv-grid"></div>
+        <div id="qcom-empty" class="empty hidden">QCOM not in scan results.</div>
+      </section>
+
+      <section class="panel half" id="sec-dip">
+        <div class="panel-head">
+          <h2>Dip scenario</h2>
+          <span class="panel-sub">dip_scenario.md</span>
+        </div>
+        <pre class="md-block" id="dip-body"></pre>
+      </section>
+
+      <section class="panel" id="sec-broker">
+        <div class="panel-head">
+          <h2>BROKER KEYS</h2>
+          <span class="badge bk-chip warn" id="bk-status">no keys saved, trading not wired</span>
+        </div>
+        <p class="panel-sub bk-note">Saving keys does not turn trading on. dry_run stays true. No orders are placed from this screen.</p>
+        <div class="bk-grid">
+          <label class="bk-field">Broker adapter
+            <select id="bk-adapter">
+              <option>Charles Schwab</option>
+              <option>Alpaca</option>
+              <option>Tradier</option>
+              <option>Interactive Brokers</option>
+              <option>E*TRADE</option>
+              <option>tastytrade</option>
+            </select>
+          </label>
+          <label class="bk-field">Paper or live
+            <select id="bk-mode">
+              <option value="paper">Paper</option>
+              <option value="live">Live</option>
+            </select>
+          </label>
+          <label class="bk-field">API key
+            <input id="bk-key" type="password" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="API key" />
+          </label>
+          <label class="bk-field">API secret
+            <input id="bk-secret" type="password" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="API secret" />
+          </label>
+        </div>
+        <p class="panel-sub" id="bk-mask"></p>
+        <button class="btn btn-primary bk-save" id="bk-save" type="button">Save</button>
+      </section>
+
+    </div>
+
+    <footer class="dash-footer">
+      Screen / execution assistant only — not financial advice.
+      dry_run stays true; approvals write to trading-bot/out only. No live Schwab orders from this UI.
+    </footer>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="/static/dashboard.js"></script>
+</body>
+</html>

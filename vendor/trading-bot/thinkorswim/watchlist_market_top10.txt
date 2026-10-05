@@ -1,0 +1,12 @@
+# Thinkorswim watchlist (comma or newline). Import: MarketWatch → Watchlist → Import
+BHE
+SNX
+MOG-A
+NHC
+PTGX
+PEB
+SBLK
+CXW
+XHR
+EGBN
+QCOM

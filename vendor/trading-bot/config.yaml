@@ -1,0 +1,45 @@
+# Stage Analysis execution assistant — propose-only by default.
+# Secrets live in env vars only (SCHWAB_*). Never hardcode credentials here.
+
+equity_scan_dir: /workspace/equity-scan
+market_results_csv: market_scan_results.csv
+dip_scenario_md: dip_scenario.md
+tickers_json: tickers.json
+
+# Signal / entry
+top_n_buys: 10
+require_volume_confirmed: true
+include_guide_top: true
+guide_top_n: 5
+qcom_dip_enabled: true
+qcom_symbol: QCOM
+default_order_type: LIMIT   # LIMIT or MARKET
+limit_offset_pct: 0.002    # buy slightly below last / sell slightly above
+
+# Sizing (used when building tickets; risk.py re-checks)
+assumed_equity_usd: 100000.0   # fallback if Schwab equity unknown
+max_positions: 10
+max_position_pct: 0.05         # 5% of equity per new BUY
+max_orders_per_day: 15
+dollar_amount_mode: true       # tickets carry dollar_amount; qty filled at execute if needed
+
+# Safety
+dry_run: true                  # stays true until SCHWAB_* present AND parent flips this
+propose_only_default: true
+
+# Broker routing (screen / execution). Default remains Schwab. Do not flip dry_run here.
+broker: schwab
+brokers_enabled:
+  - schwab
+  - alpaca
+  - tradier
+  - ibkr
+  - etrade
+  - tastytrade
+
+# Paths (relative to bot root)
+out_dir: out
+data_dir: data
+ledger_file: data/ledger.json
+approvals_file: out/approvals.jsonl
+executions_file: out/executions.jsonl

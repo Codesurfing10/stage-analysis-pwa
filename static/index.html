@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0f14" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Stage" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/icon.svg" />
+  <link rel="stylesheet" href="/static/app.css" />
+  <title>Stage Analysis</title>
+</head>
+<body>
+  <div id="unlock">
+    <div class="unlock-box">
+      <h2>Stage Analysis</h2>
+      <p>Enter app PIN to unlock. PIN stays in sessionStorage for this tab only (re-prompted on 401). Default PIN is documented in <code>.app_pin</code> / README (101010).</p>
+      <input id="pin-input" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="12" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="PIN" />
+      <div class="err" id="pin-err"></div>
+      <button class="btn btn-approve" id="pin-go" type="button">Unlock</button>
+    </div>
+  </div>
+
+  <header class="app-header">
+    <div>
+      <h1>Stage Analysis</h1>
+      <div class="meta" id="asof-line">as-of —</div>
+    </div>
+    <div class="badges">
+      <span class="badge dry" id="dry-badge">dry_run</span>
+      <button class="btn-refresh" id="btn-refresh" type="button" title="Reload latest scan">Refresh</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel active" id="panel-top10" data-panel="top10">
+      <div class="card table-wrap">
+        <h3>Market Top 10</h3>
+        <table>
+          <thead>
+            <tr><th>#</th><th>Ticker</th><th>Score</th><th>Price</th><th>Vol</th></tr>
+          </thead>
+          <tbody id="top10-body"></tbody>
+        </table>
+      </div>
+      <div class="card" id="qcom-card" style="display:none">
+        <h3>QCOM</h3>
+        <div id="qcom-body" class="reason"></div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-tickets" data-panel="tickets">
+      <div id="tickets-list"></div>
+    </section>
+
+    <section class="panel" id="panel-dip" data-panel="dip">
+      <div class="card">
+        <h3>Dip scenario</h3>
+        <div class="markdown" id="dip-body"></div>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-status" data-panel="status">
+      <div class="status-grid" id="status-grid"></div>
+      <div class="card" style="margin-top:12px">
+        <h3>Open positions</h3>
+        <div id="positions-body" class="reason">None</div>
+      </div>
+      <div class="card">
+        <h3>Approved IDs</h3>
+        <div id="approved-body" class="reason">—</div>
+      </div>
+    </section>
+
+
+    <section class="panel" id="panel-keys" data-panel="keys">
+      <div class="card broker-card">
+        <div class="broker-head">
+          <h3>BROKER KEYS</h3>
+          <span class="chip warn" id="bk-status">no keys saved, trading not wired</span>
+        </div>
+        <p class="reason">Saving keys does not turn trading on. dry_run stays true. No orders are placed from this screen.</p>
+        <label class="field">Broker adapter
+          <select id="bk-adapter">
+            <option>Charles Schwab</option>
+            <option>Alpaca</option>
+            <option>Tradier</option>
+            <option>Interactive Brokers</option>
+            <option>E*TRADE</option>
+            <option>tastytrade</option>
+          </select>
+        </label>
+        <label class="field">Paper or live
+          <select id="bk-mode">
+            <option value="paper">Paper</option>
+            <option value="live">Live</option>
+          </select>
+        </label>
+        <label class="field">API key
+          <input id="bk-key" type="password" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="API key" />
+        </label>
+        <label class="field">API secret
+          <input id="bk-secret" type="password" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="API secret" />
+        </label>
+        <p class="reason" id="bk-mask"></p>
+        <button class="btn btn-approve" id="bk-save" type="button">Save</button>
+      </div>
+    </section>
+
+    <p class="footer-note">Screen/execution assistant only — not financial advice</p>
+  </main>
+
+  <nav class="tabs" aria-label="Sections">
+    <button class="tab active" data-tab="top10" type="button"><span class="ic">▲</span>Top 10</button>
+    <button class="tab" data-tab="tickets" type="button"><span class="ic">☰</span>Tickets</button>
+    <button class="tab" data-tab="dip" type="button"><span class="ic">↘</span>Dip</button>
+    <button class="tab" data-tab="status" type="button"><span class="ic">●</span>Status</button>
+    <button class="tab" data-tab="keys" type="button"><span class="ic">⚿</span>Keys</button>
+  </nav>
+
+  <div class="modal-backdrop hidden" id="modal">
+    <div class="modal">
+      <h3 id="modal-title">Manual entry</h3>
+      <pre id="modal-body"></pre>
+      <button class="btn btn-secondary" id="modal-close" type="button">Close</button>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
