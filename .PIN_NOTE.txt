@@ -1,8 +1,0 @@
-Stage Analysis app PIN: 101010
-
-Source of truth: /workspace/stage-pwa/.app_pin (chmod 600)
-Override: env STAGE_APP_PIN
-
-Clients send header X-App-Pin (or ?pin= on GET). PIN is kept in sessionStorage
-for the browser tab after unlock; a 401 clears it and re-prompts.
-Do not commit this file or .app_pin.
